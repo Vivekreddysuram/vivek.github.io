@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Vivek Reddy Suram</h1>
+        <nav>
+            <ul>
+                <button id="darkModeToggle" class="dark-mode-toggle">Dark Mode</button>
+                <!-- <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="interest.html">Hobbies</a></li>
+                <li><a href="game.html">Connect 4 Game</a></li>
+                <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+        </nav>
+        <img class="anime-goku" src="ZQ6M.gif" alt="Goku Running">
+    </header>
+    <main>
+        <h2 id="gameStatus">Player 1's turn</h2>
+        <div id="gameBoard">
+        <button id="restartButton" style="display: none;">Restart</button>
+    </main>
+    <div id="restartModal" class="modal">
+        <div class="modal-content">
+            <p id="restartText"></p>
+            <button id="restartModalButton">Restart Game</button>
+        </div>
+    </div>
+    <div id="colorChoiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose Your Coin Colors</h2>
+            Player 1 Color: <select id="player1Color">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                </select>
+                Player 2 Color: <select id="player2Color">
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+            </select>
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+    <div id="colorChoiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose Your Coin Colors</h2>
+            Player 1 Color: <select id="player1Color">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <br><br>
+            Player 2 Color: <select id="player2Color">
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <br><br>
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Vivek Reddy Suram</p>
+    </footer>
+    <script>
+        document.getElementById("darkModeToggle").onclick = function() {
+            document.body.classList.toggle("dark");
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
